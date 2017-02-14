@@ -1,6 +1,5 @@
 app.controller('MapController', ['$scope', 'configValue', 'BaseLayer', 'PinPointLayer',
     function($scope, configValue, BaseLayer, PinPointLayer){
-        console.log('MapController');
         $scope.model = {
             map : {
                 mapInitArgs :{
@@ -18,7 +17,6 @@ app.controller('MapController', ['$scope', 'configValue', 'BaseLayer', 'PinPoint
 
         function initMap()
         {
-            console.log('initMap()');
             var olMap;
 
             olMap = $scope.model.map.olMap;
